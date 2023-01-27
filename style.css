@@ -315,7 +315,7 @@ ul, li, p {
 
 .title-find {
     margin-bottom: 40px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: var(--gray);
     font-size: 23.2px;
     font-weight: 600;
@@ -441,7 +441,7 @@ ul, li, p {
     display: block;
     position: relative;
     z-index: 2;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 14.55px;
     transform: rotate(-45deg);
     max-width: 80px;
@@ -584,4 +584,116 @@ ul, li, p {
     top: 3px;
     right: 0;
     background-image: url('./img/wave.svg');
+}
+
+.comments {
+    background-image: url(./img/bepart-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: 670px;
+}
+
+.comments-top__inner {
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+.comments-top__title {
+    font-size: 39.2px;
+    font-weight: 600;
+    color: #9ec02d;
+    padding-bottom: 40px;
+}
+
+.comments-top__text {
+    color: #949494;
+    line-height: calc(30/19.2);
+}
+
+.comments-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-item {
+    min-width: 397px;
+}
+
+.comment-item__review {
+    background-image: url(./img/comment.png);
+    min-height: 165px;
+    margin-bottom: 35px;
+}
+
+.comment-review__title {
+    text-align: center;
+    padding-top: 17px;
+    font-weight: 600;
+    font-size: 21.2px;
+    margin-bottom: 20px;
+    color: #9ec02d;
+}
+
+.comment-review__text {
+    font-size: 13.2px;
+    color: #848484;
+    text-align: center;
+    line-height: calc(20/13.2);
+}
+
+.comment-item__person {
+    position: relative;
+    padding-left: 130px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #494949;
+    font-weight: 700;
+    font-size: 15.2px;
+}
+
+.comment-item__person:before {
+    width: 60px;
+    height: 60px;
+    left: 60px;
+    content: "";
+    position: absolute;
+}
+
+.comment-person--1:before {
+    background-image: url(./img/mess-photo1.png);
+}
+
+.comment-person--2:before {
+    background-image: url(./img/mess-photo2.png);
+}
+
+.footer {
+    padding: 50px 0 35px;
+}
+
+.footer-media__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-media {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer-copy {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 13.2px;
+    color: #848484;
+    font-weight: 600;
 }
